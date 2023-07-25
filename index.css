@@ -1,24 +1,111 @@
-header{
-    width: 100%;
+.cabeçalho{
     height: 15vh;
-    background-image: url(fotos/back\ header.jpg);
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+   background-color: rgb(0, 0, 0);
+   display: flex;
+   
+
+
 }
 
 .logo-header{
-    
-    width: 40%;
+    margin: auto;
+    width: 300px;
+    height: 80%;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+
+
+
+
 
 }
 .carro-logo{
-    width: 100%;
+    display: block;
+    width: 200px;
     height: 40px;
-    opacity: 75%;
+    margin: auto;
+    
+    
+    
+   
+    
 }
 .titulo-logo{
-    background-color: rgb(0, 0, 0);
+   
     width: 100%;
-    font-size: 14px;
-    color: rgba(245, 222, 179, 0.582);
+    font-size: 24px;
+    color: red;
+    text-align: center;
+ 
+}
+
+.lista-header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width:500px;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+.item-lista:hover{
+    text-decoration: underline rgba(255, 255, 255, 0.437);
+    color:grey;
+    transition: 1s;
+}
+
+.item-lista{
+    color:white;
+    padding:  15px 0;
+    align-items: center;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .lista-header{
+ 
+        width:400px;
+        font-size: 18px;
+       
+        
+    }
+    .carro-logo{
+        width: 180px;     
+    }
+    .titulo-logo{
+        font-size: 20px;
+        
+     
+    }
+ 
+
+}
+
+@media screen and (max-width:650px){
+    .lista-header{
+        display: none;
+    }
 }
