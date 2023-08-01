@@ -1,10 +1,12 @@
+body{
+    background-color:#00030c;
+}
+
 .cabeçalho{
     height: 15vh;
     width: 100%;
-   background-color: rgb(0, 0, 0);
-   display: flex;
-   
-
+    background-color: black;
+  
 
 }
 
@@ -14,22 +16,13 @@
     height: 80%;
     display:grid;
     grid-template-rows: 1fr 1fr;
-
-
-
-
-
 }
 .carro-logo{
     display: block;
     width: 200px;
     height: 40px;
     margin: auto;
-    
-    
-    
-   
-    
+      
 }
 .titulo-logo{
    
@@ -39,73 +32,115 @@
     text-align: center;
  
 }
+main{
 
-.lista-header{
+    width: 90%;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    width:500px;
-    font-size: 20px;
-    margin-left: 20px;
+    flex-direction: column;
+    color: white;
+}
+
+.orçamento{
+    
+    align-self: flex-end;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: .6s; 
+    box-shadow: inset 0px 0px 5px  rgb(240, 237, 237);
+
+}
+
+.scanner{
+
+    width: 100%;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    text-align: center;
+    
     
 }
 
-.item-lista:hover{
-    text-decoration: underline rgba(255, 255, 255, 0.437);
-    color:grey;
-    transition: 1s;
+.img-scanner{
+    box-shadow:  10px 15px 400px  rgba(16, 9, 156, 0.504);
+    border-radius: 23%;
+    border: 1px solid rgba(0, 0, 0, 0.609);
 }
 
-.item-lista{
-    color:white;
-    padding:  15px 0;
-    align-items: center;
-   
+.titulo-scanner{
+    width: 100%;
+    font-size: 28px;
+    margin-top: 50px;
+    font-weight: bold;
+    
+    
+}
 
+.texto-scanner{
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
 
 
 
+@media screen and (max-width:920px) {
+    .scanner{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.titulo-scanner{
+    font-size: 18px;
+}
+
+.texto-scanner{
+    font-size: 14px;
+}
+.carro-logo{
+    width: 180px;     
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:800px){
-    .lista-header{
+.carro-logo{
+    width: 180px;     
+}
+.titulo-logo{
+    font-size: 20px;
+    
  
-        width:400px;
-        font-size: 18px;
-       
-        
-    }
-    .carro-logo{
-        width: 180px;     
-    }
-    .titulo-logo{
-        font-size: 20px;
-        
-     
-    }
- 
+}
+.orçamento{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 14px;
+  
 
 }
 
-@media screen and (max-width:650px){
-    .lista-header{
-        display: none;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
