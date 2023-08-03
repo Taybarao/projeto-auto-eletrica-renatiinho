@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .cabeçalho{
@@ -40,7 +41,7 @@ body{
 main{
 
     width: 90%;
-    margin:  50px auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     color: white;
@@ -94,7 +95,6 @@ main{
 }
 
 .rodape{
-    color: white;
     margin-top: 100px;
     width: 100%;
     height: 60px;
@@ -105,11 +105,125 @@ main{
     font-size: 20px;
     }
 
-    .item-footer{
-    padding: 10px;
-        
+ 
+
+    input[type=radio] {
+        display: none;
     }
 
+    .contato{
+        position: fixed;
+        background-image: url(fotos/389237.jpg);
+           color: white;
+        background-position: center;
+        background-size: cover;
+        height: 85vh;
+        display: none;
+        grid-template-areas: 
+        "   retorno retorno"
+        "   foto  titulo   "
+        "    nome  nome     "
+        "    texto texto   "
+        ;
+    }
+
+
+
+    .botao-retorno{
+        grid-area: retorno;
+        justify-self: flex-end;
+        font-size: 20px;
+        padding: 20px;
+        height: fit-content;
+        color: black;
+    }
+
+    .botao-contato{
+        background-image: linear-gradient(to bottom, #ba2c01cb, #000000c4);
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 4px px 5px black;
+        font-size: 14px;
+    }
+
+    .foto-contato{
+        margin: auto;
+    }
+
+    .container-numero{
+           
+        width: 100%;
+        height: 174px;
+        margin: auto;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    
+    
+         
+    } 
+    
+
+    .img-botao-contato{
+        padding: 10px 5px 10px 0px;
+    }
+
+
+
+    .titulo-contato{
+        width:100%;
+        font-size: 26px;
+        text-align: center;
+        margin: 10px auto 30px ;
+
+     
+
+    }
+
+    .nome-contato{
+
+        grid-area: nome;
+        text-align: center;
+        margin-top: 20px;
+
+
+    }
+
+    .texto-contato{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+     font-size: 12px;
+     grid-area: texto;
+
+    }
+.mapa{
+    position: fixed;
+    background-image: url(fotos/eb0fef9fbf611f9ddc5921dc778fcfdb.jpg);
+       color: white;
+       width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: none;
+}
+
+
+    #te1:checked~.contato {
+        display: grid;
+        
+    }
+    #te2:checked~.mapa {
+        display: grid;
+        
+    }
+     
+    
 
 
 
