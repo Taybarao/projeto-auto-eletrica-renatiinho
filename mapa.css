@@ -30,8 +30,13 @@
 .video-apresentaçao{
     width: 90%;
     height: 150px;
+    margin: 100px;
     background-color: blue;
-    margin: 10px;
+
+}
+
+.video{
+    width: 90%;
 }
 
 .tabela-hr {
