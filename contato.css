@@ -1,0 +1,63 @@
+.body-contato{
+        background-image: url(fotos/27991.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+
+    
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    width: 100vw;
+}
+
+.foto-contato{
+    margin: 40px;
+    width: 150px;
+    height: 200px;
+}
+
+.titulo-contato{
+    width: 150px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    background-color:grey;
+    text-transform: uppercase;
+
+}
+
+.texto-contato{
+    width: 90%;
+    text-align: center;
+    background-color: grey;
+    padding: 10px;
+    font-size: 12px;
+    margin: 20px;
+
+}
+
+.botao-contato{
+    background-color: rgba(0, 0, 0, 0.554);
+    color: white;
+    width: 100% ;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px  rgb(128, 115, 115);
+    padding: 10px 0;
+
+
+
+}
+
+.img-botao-contato{
+    padding: 0 10px 0 0 ;
+}
+
