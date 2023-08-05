@@ -21,8 +21,8 @@
     position: fixed;
     align-self: flex-end;
     padding:10px;
-    margin: 5px;
-    font-size: 25px;
+    margin: 10px;
+    font-size: 30px;
     border-radius: 10px;
     border: 1px solid white;
 }
@@ -30,13 +30,8 @@
 .video-apresentaçao{
     width: 90%;
     height: 150px;
-    margin: 100px;
     background-color: blue;
-
-}
-
-.video{
-    width: 90%;
+    margin: 10px;
 }
 
 .tabela-hr {
