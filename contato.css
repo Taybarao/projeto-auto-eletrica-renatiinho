@@ -1,8 +1,9 @@
 .body-contato{
-        background-image: url(fotos/27991.jpg);
+        background-image: url(https://images5.alphacoders.com/436/thumbbig-436163.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-blend-mode:exclusion ;
      
 
     
@@ -17,17 +18,18 @@
 }
 
 .foto-contato{
-    margin: 40px;
-    width: 150px;
-    height: 200px;
+    margin: 10px;
+    border-radius: 35px;
+  
 }
 
 .titulo-contato{
     width: 150px;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
+    font-weight: bold;
     padding: 10px;
-    background-color:grey;
+    background-color:rgba(30, 62, 138, 0.702);
     text-transform: uppercase;
 
 }
@@ -35,7 +37,7 @@
 .texto-contato{
     width: 90%;
     text-align: center;
-    background-color: grey;
+    background-color: rgba(57, 66, 194, 0.631);
     padding: 10px;
     font-size: 12px;
     margin: 20px;
@@ -44,9 +46,9 @@
 
 .botao-contato{
     background-color: rgba(0, 0, 0, 0.554);
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100% ;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
