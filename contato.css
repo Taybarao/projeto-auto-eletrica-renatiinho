@@ -1,35 +1,37 @@
-.body-contato{
-        background-image: url(https://images5.alphacoders.com/436/thumbbig-436163.webp);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-blend-mode:exclusion ;
-     
 
+.body-contato{
+    background-image: url(fotos/389237.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
-}
+}  
+
+
 
 .contato{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    width: 100vw;
+    color:black;
+    width: 100%;
+    
 }
 
 .foto-contato{
-    margin: 10px;
+    margin-top: 100px;
     border-radius: 35px;
   
 }
 
 .titulo-contato{
+    margin-top: 20px;
     width: 150px;
     font-size: 22px;
     text-align: center;
     font-weight: bold;
     padding: 10px;
-    background-color:rgba(30, 62, 138, 0.702);
+background-color: rgb(182, 170, 170);
     text-transform: uppercase;
 
 }
@@ -37,29 +39,86 @@
 .texto-contato{
     width: 90%;
     text-align: center;
-    background-color: rgba(57, 66, 194, 0.631);
+    background-color: rgb(182, 170, 170);
     padding: 10px;
     font-size: 12px;
     margin: 20px;
 
 }
 
-.botao-contato{
-    background-color: rgba(0, 0, 0, 0.554);
-    color: rgb(255, 255, 255);
-    width: 100% ;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 0px 10px  rgb(128, 115, 115);
-    padding: 10px 0;
 
-
-
-}
 
 .img-botao-contato{
     padding: 0 10px 0 0 ;
 }
+
+
+
+.container-mapa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.botao-retorno{
+    background-color: rgba(0, 0, 0, 0.656);
+    color: white;
+    position: fixed;
+    align-self: flex-end;
+    padding:10px;
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    
+}
+
+.botao-retorno:hover{
+    background-color: red;
+}
+
+.video-lambo{
+    margin-top: 50px;
+}
+
+.tabela-hr {
+    color:white;
+    background-color: #0000005f;
+    font-size: 14px;
+    width: 60%;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+
+  }
+
+  
+  .td, .tr{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+
+  
+.link-mapa{
+    color:white;
+    font-size: 10px;
+    background-color:grey;
+    padding: 5px;
+    margin: 10px;
+    
+    text-align: center;
+  
+    
+ 
+
+   }
+
+   .janela-mapa{
+    border-radius: 20px;
+   }
+
 
