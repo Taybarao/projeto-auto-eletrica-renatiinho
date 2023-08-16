@@ -21,6 +21,7 @@ body{
     background-color: black;
     height: 12vh;
     width: 100%;
+    z-index: 3;
   
 
 }
@@ -192,7 +193,6 @@ justify-content: space-between;
 
 .img-item{
     margin: auto;
-    border-radius: 30%;
 }
 
 .titulo-item-modulos{
@@ -202,6 +202,45 @@ justify-content: space-between;
     text-transform: uppercase;
 
 }
+
+.luz-injeçao{
+    z-index: 2;
+    position:absolute;
+}
+
+.efeito-luz{
+    margin: auto;
+    width:56px ;
+    height: 45px; 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.efeito-luz::before {
+    content: '';
+    position: relative;
+    width: 10px;
+    height: 150%;
+   background-color: red;
+    animation: animate .7s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-color: #00030c;
+        transform: scale(1);
+    }
+
+    100% {
+        background-color:red;
+        transform: scale(10);
+    }
+}
+
 
 
 .serviços{
