@@ -179,11 +179,24 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
   text-align: center;
-
+border: 2px solid black;
     border-radius: 20px;
-    
+    animation: piscar 25s infinite;
+    box-sizing: border-box;
 
 }
+
+
+  @keyframes piscar {
+    0%, 100% {
+      border-color: rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0, 0.707);
+    }
+    50%{
+      border-color: rgb(255, 0, 0);
+       background-color: rgb(0, 0, 0);
+    }
+  }
 
 .item-li{
  box-sizing: border-box;
@@ -223,6 +236,7 @@ justify-content: space-between;
 .efeito-luz::before {
     content: '';
     position: relative;
+    
     width: 10px;
     height: 150%;
    background-color: red;
@@ -231,7 +245,7 @@ justify-content: space-between;
 
 @keyframes animate {
     0% {
-        background-color: #00030c;
+        background-color: #00030c84;
         transform: scale(1);
     }
 
@@ -280,10 +294,7 @@ justify-content: space-between;
     transition: .3s;
 }
 
-.itens:before{
-	content: "🟉";
-    padding: 4px;
-}
+
  
 
  
