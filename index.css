@@ -49,7 +49,7 @@ body{
 }
 main{
 
-    width: 100%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ main{
 
 .scanner{
 
-    width: 90%;
+    width: 100%;
     margin-top: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,30 +109,29 @@ main{
 }
 
 .modulos{
-    width: 90%;
-
-    margin-top: 100px;
+    width: 100%;
     
 }
 
 hr{
-    width: 90%;
+    width: 100%;
     border-bottom: 1px solid black;
-    margin-top: 100px;
+    margin: 100px auto;
 }
 
 .titulo-modulos{
     width: 100%;
     text-align: center;
-    font-size: 28px;
-    margin-top: 50px;
+    font-size: 22px;
+    margin: 50px auto;
     font-weight: bold;
     color: yellow;
+
 
 }
 
 .texto-modulos{
-    margin-top: 50px;
+    margin: 50px auto;
     width: 100%;
     text-align: center;
 
@@ -151,6 +150,15 @@ background-size: cover;
     box-shadow:  10px 15px 400px  rgba(16, 9, 156, 0.504);
 
     
+}
+
+.itens-serviços{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00030cd6;
+
 }
 
 
@@ -194,6 +202,49 @@ justify-content: space-between;
     text-transform: uppercase;
 
 }
+
+
+.serviços{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    background-image: url(https://www.disalconsorcio.com.br/blog/wp-content/uploads/2017/01/Imagem-topo.png);
+    background-position: center;
+    background-size: cover;
+   
+
+}
+
+.lista-beneficios {
+	width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    
+    
+}
+
+.itens {
+	line-height: 1.5;
+    background-color: rgba(255, 4, 4, 0.707);
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 4px 4px 5px black, inset 3px 2px 2px rgba(245, 222, 179, 0.559);
+}
+
+.itens:hover{
+    background-color:black;
+    transition: .3s;
+}
+
+.itens:before{
+	content: "🟉";
+    padding: 4px;
+}
  
 
  
@@ -231,6 +282,10 @@ justify-content: space-between;
 .lista-modulos{
     flex-direction: column;
 }
+
+.itens{
+    width: 65%;
+}
 }
 
 
@@ -239,6 +294,10 @@ justify-content: space-between;
         width: 95%;
         height:250px;
     }  
+    .itens{
+        width: 95%;
+        font-size: 14px;
+    }
 }
 
 
