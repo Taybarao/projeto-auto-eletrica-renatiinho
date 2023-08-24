@@ -9,18 +9,45 @@
 
 
 
-.contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color:black;
+
+
+.contatos{
+    margin-top: 200px;
     width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 5px;
     
 }
 
+.container-contato{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  
+}
+
+
+
+
+.lista-contato{
+    
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
 .foto-contato{
-    margin-top: 100px;
+    margin:50px;
     border-radius: 35px;
+
   
 }
 
@@ -31,32 +58,58 @@
     text-align: center;
     font-weight: bold;
     padding: 10px;
-background-color: rgb(182, 170, 170);
+    color: white;
     text-transform: uppercase;
 
 }
 
 .texto-contato{
-    width: 90%;
-    text-align: center;
-    background-color: rgb(182, 170, 170);
+    background-color: grey;
+    color: black;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
     padding: 10px;
-    font-size: 12px;
-    margin: 20px;
+    line-height: 1.5;
+    margin:30px 0;
+    font-size: 14px;
+
 
 }
+
+.botao-contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: piscar 5s infinite;
+    padding: 3px 5px;
+    border-radius: 10px;
+    border: 2px solid black;}
+   
+    @keyframes piscar {
+        0%, 100% {
+          border-color: rgb(0, 0, 0);
+         background-color: rgba(0, 0, 0, 0.707);
+        }
+        50%{
+          border-color:black;
+           background-color: rgb(0, 0, 0);
+        }
+      }
+
 
 
 
 .img-botao-contato{
-    padding: 0 10px 0 0 ;
+    margin: 5px ;
+
 }
 
 
 
 .container-mapa{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,16 +133,13 @@ background-color: rgb(182, 170, 170);
     background-color: red;
 }
 
-.video-lambo{
-    margin-top: 50px;
-}
 
 .tabela-hr {
     color:white;
     background-color: #0000005f;
     font-size: 14px;
-    width: 60%;
-    margin: 20px 0 20px 0;
+    width: 50%;
+    margin: 60px auto;
     padding: 10px;
 
   }
@@ -119,6 +169,23 @@ background-color: rgb(182, 170, 170);
 
    .janela-mapa{
     border-radius: 20px;
+   }
+
+
+   @media screen and ( max-width:800px){
+
+    .contatos, .container-contato, .container-mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .tabela-hr{
+        width: 90%;
+    }
+    
    }
 
 
