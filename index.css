@@ -10,7 +10,6 @@ body{
     align-items: center;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 
@@ -19,7 +18,7 @@ body{
 .cabeçalho{
     position: fixed;
     background-color: black;
-    height: 12vh;
+    height: 13vh;
     width: 100%;
     z-index: 3;
   
@@ -73,7 +72,9 @@ main{
 }
 
 .img-scanner{
-    box-shadow:  10px 15px 400px  rgba(16, 9, 156, 0.504);
+    width: 90%;
+    margin: auto;
+    box-shadow:  10px 15px 80px  rgba(255, 0, 0, 0.504);
     border-radius: 23%;
     border: 1px solid rgba(0, 0, 0, 0.609);
 }
@@ -100,7 +101,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0px 0px 10px  rgb(128, 115, 115);
+    box-shadow: inset 0px 0px 10px  rgb(246, 7, 7);
     padding: 20px;
     border-radius: 20px;
     
@@ -148,7 +149,7 @@ background-size: cover;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow:  10px 15px 400px  rgba(16, 9, 156, 0.504);
+     box-shadow:  10px 15px 80px  rgba(16, 9, 156, 0.504);
 
     
 }
@@ -280,20 +281,19 @@ border: 2px solid black;
 
 .itens {
 	line-height: 1.5;
-    background-color: rgba(255, 4, 4, 0.707);
+    background-color: black;
     width: 40%;
     align-items: center;
     text-align: center;
     padding: 5px;
-  
-}
-
-.itens:hover{
-    background-color:black;
-    transition: .3s;
+    margin: 1px;
 }
 
 
+
+.titulo-botao{
+    padding: 5px 10px;
+}
  
 
  
@@ -305,6 +305,10 @@ border: 2px solid black;
     .scanner{
         display: flex;
         flex-direction: column;
+    }
+    
+    .img-scanner{
+        width: 60%;
     }
 
 .titulo-scanner{
