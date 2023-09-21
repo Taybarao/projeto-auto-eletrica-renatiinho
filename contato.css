@@ -7,32 +7,22 @@
     
 }  
 
-
-
-
-
 .contatos{
     margin-top: 200px;   width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
     padding-bottom: 100px;
-    
-}
+    }
 
 .container-contato{
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: auto 1fr;
-  
 }
 
-
-
-
 .lista-contato{
-    
     width:100%;
     margin: auto;
     display: flex;
@@ -40,15 +30,9 @@
     align-items: center;
 }
 
-
-
-
-
 .foto-contato{
     margin:50px;
     border-radius: 35px;
-
-  
 }
 
 .titulo-contato{
@@ -61,7 +45,6 @@
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px  red;
     text-transform: uppercase;
-
 }
 
 .texto-contato{
@@ -74,8 +57,6 @@
     line-height: 1.5;
     margin:30px 0;
     font-size: 14px;
-
-
 }
 
 .botao-contato{
@@ -99,22 +80,15 @@
         }
       }
 
-
-
-
 .img-botao-contato{
     margin: 5px ;
-
 }
-
-
 
 .container-mapa{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .botao-retorno{
@@ -127,13 +101,11 @@
     font-size: 30px;
     border-radius: 10px;
     border: 1px solid white;
-    
-}
+   }
 
 .botao-retorno:hover{
     background-color: red;
 }
-
 
 .tabela-hr {
     color:white;
@@ -142,17 +114,13 @@
     width: 50%;
     margin: 60px auto;
     padding: 10px;
-
   }
-
   
   .td, .tr{
     padding: 10px;
     border: 1px solid black;
     text-align: center;
   }
-
-
   
 .link-mapa{
     color:white;
@@ -162,19 +130,13 @@
     margin: 10px;
     border-radius: 10px;
     text-align: center;
-  
-    
- 
-
-   }
+  }
 
    .janela-mapa{
     border-radius: 20px;
    }
 
-
    @media screen and ( max-width:800px){
-
     .contatos, .container-contato, .container-mapa{
         display: flex;
         flex-direction: column;
@@ -185,8 +147,7 @@
 
     .tabela-hr{
         width: 90%;
-    }
-    
+    }    
    }
 
 
